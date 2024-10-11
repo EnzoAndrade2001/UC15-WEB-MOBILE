@@ -29,6 +29,8 @@ form.addEventListener("submit", (event) => {
                 return;
         }
 
+   
+
         let li = document.createElement("li");
         li.innerText = liValue;
         let deleteBtn = document.createElement("button");
@@ -51,10 +53,6 @@ form.addEventListener("submit", (event) => {
 
         liInput.value = '';
 });
-
-
-
-
 
 function showError(message){
         errorMessage.textContent = message;
