@@ -25,16 +25,10 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    transition: height 0.2s ease;
 
     &.active{
         height: 530px;
-
-        .qr-code{
-            opacity: 1;
-            pointer-events: auto;
-            transition: opacity 0.5s 0.05s ease ;
-        }
-
     }
 
 }
@@ -131,8 +125,10 @@ box-lista{
     overflow-y: auto; 
     max-height: 150px; 
     margin-top: 15px;
-    transition: max-height 2s ease, padding 2s ease;
+    /*transition: max-height 2s ease, padding 2s ease;*/
+  
 }
+
 
 .lista.show{
     display: block;
